@@ -3,6 +3,7 @@ import express from "express";
 const app = express();
 const port = 3000;
 
+// Implementación del Middleware
 function logger (req, res, next) {
   console.log("Request method: ", req.method);
   console.log("Request URL: ", req.url);
